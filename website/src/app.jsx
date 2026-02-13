@@ -44,14 +44,19 @@ export function App() {
         Capture thoughts <em>instantly</em> from anywhere on your Mac
       </motion.h1>
 
-      <motion.div class="demo" {...fade(0.24)}>
+      <motion.div class="hotkey" {...fade(0.24)}>
+        Press <kbd>&#8984;</kbd> <kbd>&#8679;</kbd> <kbd>N</kbd> to capture from
+        anywhere
+      </motion.div>
+
+      <motion.div class="demo" {...fade(0.32)}>
         <video autoplay loop muted playsinline>
           <source src="/screencast.webm" type="video/webm" />
           <source src="/screencast.mp4" type="video/mp4" />
         </video>
       </motion.div>
 
-      <motion.a href="#" class="cta" {...fade(0.32)}>
+      <motion.a href="#" class="cta" {...fade(0.4)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -68,14 +73,9 @@ export function App() {
         Download for Mac
       </motion.a>
 
-      <motion.p class="note" {...fade(0.4)}>
+      <motion.p class="note" {...fade(0.48)}>
         Requires macOS 13 or later
       </motion.p>
-
-      <motion.div class="hotkey" {...fade(0.48)}>
-        Press <kbd>&#8984;</kbd> <kbd>&#8679;</kbd> <kbd>N</kbd> to capture from
-        anywhere
-      </motion.div>
     </main>
     </>
   );

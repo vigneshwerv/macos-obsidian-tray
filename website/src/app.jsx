@@ -58,7 +58,7 @@ export function App() {
         </video>
       </motion.div>
 
-      <motion.a href="#" class="cta" {...fade(0.4)}>
+      <motion.a href="https://github.com/vigneshwerv/macos-obsidian-tray/releases/latest/download/Obsidian.Tray.dmg" class="cta" {...fade(0.4)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

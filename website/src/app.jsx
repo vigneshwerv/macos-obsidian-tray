@@ -11,6 +11,8 @@ const fade = (delay) => ({
   },
 });
 
+const base = import.meta.env.BASE_URL;
+
 export function App() {
   return (
     <>
@@ -30,7 +32,7 @@ export function App() {
       </motion.a>
       <main>
       <motion.img
-        src="/icon.png"
+        src={`${base}icon.png`}
         alt="Obsidian Tray icon"
         class="icon"
         {...fade(0)}
@@ -51,8 +53,8 @@ export function App() {
 
       <motion.div class="demo" {...fade(0.32)}>
         <video autoplay loop muted playsinline>
-          <source src="/screencast.webm" type="video/webm" />
-          <source src="/screencast.mp4" type="video/mp4" />
+          <source src={`${base}screencast.webm`} type="video/webm" />
+          <source src={`${base}screencast.mp4`} type="video/mp4" />
         </video>
       </motion.div>
 

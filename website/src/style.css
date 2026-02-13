@@ -1,0 +1,237 @@
+:root {
+  --bg: #0a0a0a;
+  --text: #f5f5f5;
+  --text-muted: #888;
+  --purple-400: #a855f7;
+  --purple-500: #7c3aed;
+  --purple-600: #6d28d9;
+  --purple-glow: rgba(168, 85, 247, 0.15);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100dvh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.icon {
+  width: 128px;
+  height: 128px;
+  border-radius: 28px;
+  margin-bottom: 2rem;
+}
+
+.app-name {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--purple-400);
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 680px;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+h1 em {
+  font-style: italic;
+  color: var(--purple-400);
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  font-weight: 400;
+  color: var(--text-muted);
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--purple-500);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.cta:hover {
+  background: var(--purple-600);
+}
+
+.cta svg {
+  width: 18px;
+  height: 18px;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  opacity: 0.6;
+}
+
+.hotkey {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 2.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+kbd {
+  font-family: inherit;
+  padding: 0.15rem 0.4rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.demo {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 640px;
+}
+
+.demo video {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 60px var(--purple-glow);
+}
+
+.github-link {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.github-link:hover {
+  color: var(--text);
+}
+
+.github-link svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  main {
+    padding: 3rem 1.5rem;
+  }
+
+  .icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+    margin-bottom: 1.25rem;
+  }
+
+  .app-name {
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .demo {
+    max-width: 480px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hotkey {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+  }
+
+  .app-name {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    margin-bottom: 0.75rem;
+  }
+
+  .demo {
+    max-width: 100%;
+    margin-bottom: 1.25rem;
+  }
+
+  .demo video {
+    border-radius: 8px;
+  }
+
+  .cta {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .hotkey {
+    margin-top: 1.25rem;
+    font-size: 0.8rem;
+  }
+
+  .note {
+    margin-top: 0.75rem;
+  }
+}

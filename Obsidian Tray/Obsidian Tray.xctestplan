@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "73F5ED55-9D82-4745-A7B7-3A4C8CD43AD5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Obsidian Tray.xcodeproj",
+      "identifier" : "EDCC94C92F252C8400329670",
+      "name" : "Obsidian Tray"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Obsidian Tray.xcodeproj",
+        "identifier" : "EDCC94D72F252C8500329670",
+        "name" : "Obsidian TrayTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Obsidian Tray.xcodeproj",
+        "identifier" : "EDCC94E12F252C8500329670",
+        "name" : "Obsidian TrayUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -13,9 +13,9 @@ Single-pane landing page for Obsidian Tray, a macOS menu bar app for quick note 
 
 ## Commands
 
-- `npm run dev` — start dev server (localhost:5173)
-- `npm run build` — production build to `dist/`
-- `npm run preview` — preview production build
+- `yarn dev` — start dev server (localhost:5173)
+- `yarn build` — production build to `dist/`
+- `yarn preview` — preview production build
 
 ## Design Decisions
 
